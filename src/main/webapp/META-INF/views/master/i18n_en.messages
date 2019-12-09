@@ -30,8 +30,8 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.announcement.list = Announcements
-master.menu.anonymous.investor.list = Investor Record
-master.menu.anonymous.company.list = Company Record
+master.menu.anonymous.investor.list = Investor Records
+master.menu.anonymous.company.list = Company Records
 
 # master.menu.administrator ###################################################
 
@@ -53,16 +53,36 @@ master.menu.authenticated.challenge.list = Challenges
 master.menu.authenticated.offers.list = Offers
 master.menu.authenticated.request.list = Requests
 master.menu.authenticated.request.create = Create request
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated = Authenticated
+master.menu.authenticated.job.list = Jobs
+master.menu.authenticated.thread.list = Threads
+
+# master.menu.employer ########################################################
+master.menu.employer = Employer
+master.menu.employer.job.list_mine = My Jobs
+master.menu.employer.application.list_mine = Applications to my jobs
+
+# master.menu.worker ########################################################
+master.menu.worker = Worker
+master.menu.worker.application.list_mine = My Applications
+
+# master.menu.auditor ########################################################
+master.menu.auditor = Auditor
+master.menu.auditor.job-auditor-record.list = Audited Jobs
+master.menu.auditor.job-no-auditor-record.list = No Audited Jobs
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.authenticated.announcement.list = Announcement
-master.menu.authenticated.investor.list = Investor Record
-master.menu.authenticated.company.list = Company Record
+master.menu.authenticated.announcement.list = Announcements
+master.menu.authenticated.investor.list = Investor Records
+master.menu.authenticated.company.list = Company Records
 master.menu.authenticated.challenges.list = Challenges
 master.menu.authenticated.offers.list = Offers
 master.menu.consumer.offer.create = New Offer
 master.menu.authenticated.requestt.list = Requests
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account

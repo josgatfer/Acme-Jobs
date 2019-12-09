@@ -1,0 +1,8 @@
+authenticated.duty.list.label.title = Título
+authenticated.duty.list.label.timePercentage = Tiempo consumido (%)
+
+authenticated.duty.form.label.title = Título
+authenticated.duty.form.label.description = Descripción
+authenticated.duty.form.label.timePercentage = Tiempo consumido (%)
+
+authenticated.duty.form.button.return = Volver

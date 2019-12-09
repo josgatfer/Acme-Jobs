@@ -26,7 +26,6 @@ public class Announcement extends DomainEntity {
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
-
 	@Past
 	private Date				moment;
 

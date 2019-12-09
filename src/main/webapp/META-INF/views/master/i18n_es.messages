@@ -16,7 +16,7 @@ master.banner.background = #36538B
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Stater!  Nunca antes ha sido tan sencillo desarrollar un \
+	¡Bienvenidos a Acme Starter! Nunca antes ha sido tan sencillo desarrollar un \
 	proyecto y hacerlo funcionar.
 
 # master.menu #################################################################
@@ -30,7 +30,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.announcement.list = Anuncios
-master.menu.anonymous.investor.list = Registro de inversión
+master.menu.anonymous.investor.list = Registros de inversión
 master.menu.anonymous.company.list = Compañías
 
 # master.menu.administrator ###################################################
@@ -59,14 +59,34 @@ master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
 master.menu.authenticated.announcement.list = Anuncios
 master.menu.authenticated.investor.list = Registro de inversión
-master.menu.authenticated.company.list = Compañias
-master.menu.authenticated.challenges.list = Desafios
+master.menu.authenticated.company.list = Compañías
+master.menu.authenticated.challenges.list = Desafíos
 master.menu.authenticated.offers.list = Ofertas
 
 master.menu.consumer.offer.create = Crear Oferta
 master.menu.authenticated.requestt.list = Peticiones
 
-master.menu.authenticated.requestt.create = Crear peticion
+master.menu.authenticated.requestt.create = Crear petición
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated = Autenticado
+master.menu.authenticated.job.list = Trabajos
+master.menu.authenticated.thread.list = Mis Hilos
+
+# master.menu.employer ########################################################
+master.menu.employer = Empleador
+master.menu.employer.job.list_mine = Mis trabajos
+master.menu.employer.application.list_mine = Solicitudes a mis trabajos
+
+# master.menu.worker #########################Applications to my jobs###############################
+master.menu.worker = Trabajador
+master.menu.worker.application.list_mine = Mis solicitudes
+
+# master.menu.auditor ########################################################
+master.menu.auditor = Auditor
+master.menu.auditor.job-auditor-record.list = Trabajos auditados
+master.menu.auditor.job-no-auditor-record.list = Trabajos no auditados
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

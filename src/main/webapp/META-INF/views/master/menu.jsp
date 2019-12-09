@@ -42,7 +42,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.challenges.list" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.offers.list" action="/authenticated/offer/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.request.list" action="/authenticated/requestt/list"/>
-			<acme:menu-suboption code="master.menu.authenticated.request.create" action="/authenticated/requestt/create"/>
+			<acme:menu-suboption code="master.menu.authenticated.request.create" action="/authenticated/requestt/create"/>		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
@@ -53,6 +53,24 @@
 			<acme:menu-suboption code="master.menu.authenticated.offers.list" action="/authenticated/offer/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.requestt.list" action="/authenticated/requestt/list"/>
 			<acme:menu-suboption code="master.menu.consumer.offer.create" action="/consumer/offer/create"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.job.list" action="/authenticated/job/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.thread.list" action="/authenticated/thread/list_mine"/>
+		
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.employer" access="hasRole('Employer')">
+			<acme:menu-suboption code="master.menu.employer.job.list_mine" action="/employer/job/list_mine"/>
+			<acme:menu-suboption code="master.menu.employer.application.list_mine" action="/employer/application/list_mine"/>
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.worker" access="hasRole('Worker')">
+		<acme:menu-suboption code="master.menu.worker.application.list_mine" action="/worker/application/list_mine"/>
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
+			<acme:menu-suboption code="master.menu.auditor.job-auditor-record.list" action="/auditor/job-audit-record/list_mine"/>
+		<acme:menu-suboption code="master.menu.auditor.job-no-auditor-record.list" action="/auditor/job-no-audit-record/list_mine"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
@@ -71,4 +89,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-
