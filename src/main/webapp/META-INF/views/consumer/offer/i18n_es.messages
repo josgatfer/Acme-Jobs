@@ -1,0 +1,33 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+consumer.offer.form.label.title = Titulo:
+consumer.offer.form.label.ticker = Ticker:
+consumer.offer.form.label.moment = Fecha:
+consumer.offer.form.label.deadline = Vencimiento:
+consumer.offer.form.label.text = Texto:
+consumer.offer.form.label.moneyMin = Salario Minimo: 
+consumer.offer.form.label.moneyMax = Salario Maximo:
+consumer.offer.form.button.return = Return
+consumer.offer.form.button.create = Nuevo
+consumer.offer.form.label.accept = Confirmar creacion de oferta
+consumer.offer.error.eur = El salario debe de ser en euros
+consumer.offer.error.ticker = Debe encajar en el patrón OAAAA-XXXXX, siendo A letras mayúsculas y X numeros enteros positivos
+consumer.offer.error.must-accept = Debe de confirmar la creación de la oferta
+consumer.offer.error.money-not-blank = El salario no puede estar en blanco
+
+
+consumer.offer.list.label.moment = Fecha
+consumer.offer.list.label.ticker = Ticker
+consumer.offer.list.label.title = Titulo
+consumer.offer.list.label.deadline = Vencimiento
+consumer.offer.list.label.text = Texto
+consumer.offer.list.label.moneyMax = Salario Maximo
+consumer.offer.list.label.moneyMin = Salario Minimo

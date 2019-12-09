@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
+	research, it is - the policy of the copyright owner to permit non-commercial use and redistribution of - this software. It has been tested 
+	carefully, but it is not guaranteed for any particular - purposes. The copyright owner does not offer any warranties or representations, 
+	nor do - they accept any liabilities with respect to them. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<!--Annoucement -->
+
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01" />
+		<property name="moment" value="2019/10/10 13:08" />
+		<property name="moreInfo" value="http://www.google.com" />
+		<property name="text" value="Description for Sample announcement 01" />
+	</bean>
+
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02" />
+		<property name="moment" value="2019/10/20 17:08" />
+		<property name="moreInfo" value="http://www.marca.com" />
+		<property name="text" value="Description for Sample announcement 02" />
+	</bean>
+
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03" />
+		<property name="moment" value="2019/09/01 12:12" />
+		<property name="moreInfo" value="http://www.stackoverflow.com" />
+		<property name="text" value="Description for Sample announcement 03" />
+	</bean>
+  
+  	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04" />
+		<property name="moment" value="2019/10/05 12:12" />
+		<property name="moreInfo" value="http://www.stackoverflow.com" />
+		<property name="text" value="Description for Sample announcement 04" />
+	</bean>
+	
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 05" />
+		<property name="moment" value="2019/05/01 12:12" />
+		<property name="moreInfo" value="http://www.stackoverflow.com" />
+		<property name="text" value="Description for Sample announcement 05" />
+	</bean>
+
+  
+  <!--Challenge -->
+	
+		<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 01" />
+		<property name="deadline" value="2019/12/01 12:12" />
+		<property name="description" value="Probar challenge." />
+		<property name="gold" value="1000" />
+		<property name="silver" value="500" />
+		<property name="bronze" value="100" />
+	</bean>
+
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 02 - Come back" />
+		<property name="deadline" value="2019/12/31 12:12" />
+		<property name="description" value="Por cortesía, para el futuro." />
+		<property name="gold" value="800" />
+		<property name="silver" value="400" />
+		<property name="bronze" value="80" />
+	</bean>
+  
+  <!--SpamFilter -->
+	<bean id="spamfilter01" class="acme.entities.spamFilters.SpamFilter">
+	<property name="badWords" 
+	value ="sex,nigeria,cialis,viagra,you've won,million dollar,has ganado,millon de dolares,sexo">
+	</property>
+	<property name="threshold" value="1.00" />	
+	</bean>
+  
+  <!--Company --> 
+  	<bean id="company01" class="acme.entities.companies.Company">
+		<property name="name" value="Mikasa, LLC" />
+		<property name="sector" value="Economy" />
+		<property name="ceo" value="Raúl García Castro" />
+		<property name="activities" value="Description of the activities" />
+		<property name="web" value="http://www.example.com" />
+		<property name="phone" value="+1 (0) 000000" />
+		<property name="email" value="mikasa@company.com" />
+		<property name="stars" value="4" />
+		<property name="incorporated" value="0" />
+
+	</bean>
+	<bean id="company02" class="acme.entities.companies.Company">
+		<property name="name" value="Trevor Philips, Inc." />
+		<property name="sector" value="Economy" />
+		<property name="ceo" value="Trevor Philips" />
+		<property name="activities" value="Description of the activities" />
+		<property name="web" value="http://www.example.com" />
+		<property name="phone" value="+998 (9998) 999999999" />
+		<property name="email" value="trevor@company.com" />
+		<property name="stars" value="5" />
+		<property name="incorporated" value="1" />
+
+	</bean>
+	<bean id="company03" class="acme.entities.companies.Company">
+		<property name="name" value="Trevor Philips, Inc." />
+		<property name="sector" value="Economy" />
+		<property name="ceo" value="Trevor Philips" />
+		<property name="activities" value="Description of the activities" />
+		<property name="web" value="http://www.example.com" />
+		<property name="phone" value="+4 (5) 999999" />
+		<property name="email" value="trevor@company.com" />
+		<property name="stars" value="" />
+		<property name="incorporated" value="1" />
+
+	</bean>
+	<bean id="company04" class="acme.entities.companies.Company">
+		<property name="name" value="Trevor Philips, Inc." />
+		<property name="sector" value="Economy" />
+		<property name="ceo" value="Trevor Philips" />
+		<property name="activities" value="Description of the activities" />
+		<property name="web" value="http://www.example.com" />
+		<property name="phone" value="+999 (9999) 9999999999" />
+		<property name="email" value="trevor@company.com" />
+		<property name="stars" value="0" />
+		<property name="incorporated" value="1" />
+	</bean>
+	<!-- Investor Records -->
+
+	<bean id="investorRecords01"
+		class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investor" value="Elon Musk" />
+		<property name="sector" value="Technology" />
+		<property name="investingStatement"
+			value="http://www.google.com" />
+		<property name="stars" value="5" />
+	</bean>
+
+	<bean id="investorRecords02"
+		class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investor" value="Warren Buffett" />
+		<property name="sector" value="Real Estate" />
+		<property name="investingStatement"
+			value="http://www.marca.com" />
+		<property name="stars" value="5" />
+	</bean>
+  
+  <!--Offer -->
+
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OABCD-01234" />
+		<property name="title" value="Sample offer 01" />
+		<property name="moment" value="2019/09/01 12:12" />
+		<property name="deadline" value="2020/1/01 12:00" />
+		<property name="text" value="Primera oferta de prueba" />
+		<property name="moneyMax" value="€1200.00" />
+		<property name="moneyMin" value="€900.00" />
+	</bean>
+  
+		<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OZZZZ-12345" />
+		<property name="title" value="Sample offer 02" />
+		<property name="moment" value="2019/09/15 1:00" />
+		<property name="deadline" value="2020/2/01 12:00" />
+		<property name="text" value="Segunda oferta de prueba" />
+		<property name="moneyMax" value="€1500.00" />
+		<property name="moneyMin" value="€100.00" />
+	</bean>
+
+		<bean id="offer03" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OZZDD-01234" />
+		<property name="title" value="Sample offer 03" />
+		<property name="moment" value="2019/10/05 2:00" />
+		<property name="deadline" value="2020/6/01 12:00" />
+		<property name="text" value="Tercera oferta de prueba" />
+		<property name="moneyMax" value="€200.00" />
+		<property name="moneyMin" value="€150.00" />
+  </bean>
+  
+  <!--Requestt -->
+  
+		<bean id="requestt01" class="acme.entities.requests.Requestt">
+		<property name="title" value="Sample request 01" />
+		<property name="moment" value="2019/09/01 12:12" />
+		<property name="deadline" value="2040/09/01 12:12" />
+		<property name="description" value="descripcionnn" />
+		<property name="reward" value="456€" />
+		<property name="ticker" value="Raaaa-12345" />
+	</bean>
+  
+  <bean id="requestt02" class="acme.entities.requests.Requestt">
+		<property name="title" value="Sample request 02" />
+		<property name="moment" value="2019/09/01 12:12" />
+		<property name="deadline" value="2040/09/01 12:12" />
+		<property name="description" value="descripcionnnw" />
+		<property name="reward" value="456€" />
+		<property name="ticker" value="Raaaa-54321" />
+	</bean>
+</beans>

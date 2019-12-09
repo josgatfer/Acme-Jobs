@@ -1,0 +1,7 @@
+administrator.spam-filter.form.label.threshold = Threshold
+administrator.spam-filter.form.label.badWords  = Spam Words
+administrator.spam-filter.form.button.return = Return
+administrator.spam-filter.form.button.update = Update
+
+administrator.spam-filter.list.label.badWords = Spam Words
+administrator.spam-filter.list.label.threshold = threshold
