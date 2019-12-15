@@ -16,12 +16,11 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="employer.job.list.label.reference" path="reference" width="20%"/>
-	<acme:list-column code="employer.job.list.label.title" path="title" width="20%"/>			
-	<acme:list-column code="employer.job.list.label.deadline" path="deadline" width="20%"/>
-	<acme:list-column code="employer.job.list.label.status" path="status" width="20%"/>	
+	<acme:list-column code="employer.duty.list.label.title" path="title" width="40%"/>		
+	<acme:list-column code="employer.duty.list.label.timePercentage" path="timePercentage" width="30%"/>	
 </acme:list>
+<jstl:if test="${model$size > 0}">
 <acme:form>
-<acme:form-submit code="employer.job.form.button.create" action="/employer/job/create"  method="get" />
+<acme:form-submit code="employer.duty.form.button.create" method="get" action="/employer/duty/create?id=${descId}" />
 </acme:form>
-
+</jstl:if>
