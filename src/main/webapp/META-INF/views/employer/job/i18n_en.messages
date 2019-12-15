@@ -1,15 +1,21 @@
-authenticated.job.list.label.reference = Reference
-authenticated.job.list.label.deadline = Dead-Line
-authenticated.job.list.label.title = Title
-authenticated.job.list.label.salary = Salary
+employer.job.list.label.reference = Reference
+employer.job.list.label.deadline = Dead-Line
+employer.job.list.label.title = Title
+employer.job.list.label.status = Status
 
-authenticated.job.form.label.reference = Reference
-authenticated.job.form.label.title = Title
-authenticated.job.form.label.deadline = Deadline
-authenticated.job.form.label.salary = Salary
-authenticated.job.form.label.moreInfo = More info
+employer.job.form.label.reference = Reference
+employer.job.form.label.title = Title
+employer.job.form.label.deadline = Deadline
+employer.job.form.label.salary = Salary
+employer.job.form.label.moreInfo = More info
+employer.job.form.label.status = Status
+employer.job.form.label.status.draft = Draft
+employer.job.form.label.status.published = Published
 
-authenticated.job.form.button.return = Return
-authenticated.job.form.button.descriptor = Descriptor
-
+employer.job.form.button.return = Return
+employer.job.form.button.descriptor = Descriptor
+employer.job.form.button.create = Create
+employer.job.form.button.audits = Audit Records
+employer.job.form.button.update = Update
+employer.job.form.button.delete = Delete
 

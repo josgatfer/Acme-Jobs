@@ -1,5 +1,5 @@
 
-package acme.features.employer.job;
+package acme.features.employer.duty;
 
 import javax.annotation.PostConstruct;
 
@@ -7,30 +7,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.components.CustomCommand;
-import acme.entities.jobs.Job;
+import acme.entities.duties.Duty;
 import acme.entities.roles.Employer;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/employer/job/")
-public class EmployerJobController extends AbstractController<Employer, Job> {
+@RequestMapping("/employer/duty/")
+public class EmployerDutyController extends AbstractController<Employer, Duty> {
 
 	@Autowired
-	private EmployerJobListMineService	listMineService;
+	private EmployerDutyShowService		showService;
 
 	@Autowired
-	private EmployerJobShowService		showService;
+	private EmployerDutyListService		listService;
 
 	@Autowired
-	private EmployerJobCreateService	createService;
+	private EmployerDutyCreateService	createService;
 
 	@Autowired
-	private EmployerJobUpdateService	updateService;
+	private EmployerDutyUpdateService	updateService;
 
 	@Autowired
-	private EmployerJobDeleteService	deleteService;
+	private EmployerDutyDeleteService	deleteService;
 
 
 	@PostConstruct
@@ -39,6 +38,6 @@ public class EmployerJobController extends AbstractController<Employer, Job> {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
-		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
 	}
 }
