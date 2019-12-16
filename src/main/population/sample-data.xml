@@ -469,6 +469,7 @@
 			value="Me gusta trabajar, por eso quiero este trabajo" />
 		<property name="skills" value="Sociable" />
 		<property name="qualifications" value="Inglés B2" />
+		<property name="motivo" value=" " />
 		<property name="job" ref="job01" />
 		<property name="worker" ref="worker1Worker" />
 	</bean>
@@ -482,6 +483,7 @@
 			value="Me gusta trabajar, por eso quiero este trabajo otra vez" />
 		<property name="skills" value="Amigable" />
 		<property name="qualifications" value="Francés B2" />
+		<property name="motivo" value=" " />
 		<property name="job" ref="job02" />
 		<property name="worker" ref="worker1Worker" />
   </bean>
