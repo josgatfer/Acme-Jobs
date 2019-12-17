@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
+import acme.entities.roles.Worker;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -28,6 +29,9 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		
+		boolean isWorker = request.getPrincipal().hasRole(Worker.class);
+		model.setAttribute("isWorker", isWorker);
 
 		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "finalMode", "status");
 	}
