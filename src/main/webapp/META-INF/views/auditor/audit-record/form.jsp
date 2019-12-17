@@ -22,5 +22,9 @@
 	<acme:form-moment code="auditor.audit-record.form.label.moment" path="moment" />
 	<acme:form-textbox code="auditor.audit-record.form.label.status" path="status" />
 
+	<acme:form-submit test="${command == 'show'}" code = "auditor.audit-record.form.button.update" action= "/auditor/audit-record/update"/>
+	<acme:form-hidden path="direccionAudit"/>
+	<acme:form-submit test="${command == 'create'}"
+	code ="auditor.audit-record.form.button.create" action = "${direccionAudit}"/>
 	<acme:form-return code="auditor.audit-record.form.button.return" />
 </acme:form>

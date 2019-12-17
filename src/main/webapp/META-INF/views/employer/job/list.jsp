@@ -16,8 +16,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.job.list.label.reference" path="reference" width="20%"/>
-	<acme:list-column code="authenticated.job.list.label.title" path="title" width="20%"/>			
-	<acme:list-column code="authenticated.job.list.label.deadline" path="deadline" width="20%"/>
-	<acme:list-column code="authenticated.job.list.label.salary" path="salary" width="20%"/>	
+	<acme:list-column code="employer.job.list.label.reference" path="reference" width="20%"/>
+	<acme:list-column code="employer.job.list.label.title" path="title" width="20%"/>			
+	<acme:list-column code="employer.job.list.label.deadline" path="deadline" width="20%"/>
+	<acme:list-column code="employer.job.list.label.status" path="status" width="20%"/>	
 </acme:list>
+<acme:form>
+<acme:form-submit code="employer.job.form.button.create" action="/employer/job/create"  method="get" />
+</acme:form>
+

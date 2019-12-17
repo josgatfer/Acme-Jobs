@@ -1,0 +1,11 @@
+employer.duty.list.label.title = Title
+employer.duty.list.label.timePercentage = Consumed Time (%)
+
+employer.duty.form.label.title = Title
+employer.duty.form.label.description = Description
+employer.duty.form.label.timePercentage = Consumed Time (%)
+
+employer.duty.form.button.return = Return
+employer.duty.form.button.create = Create
+employer.duty.form.button.update = Update
+employer.duty.form.button.delete = Delete

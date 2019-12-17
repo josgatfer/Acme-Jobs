@@ -10,7 +10,7 @@
 - they accept any liabilities with respect to them.
 --%>
 
-<%@page language="java"%>
+<%@page language="java" import="acme.framework.helpers.PrincipalHelper,acme.entities.roles.Provider,acme.entities.roles.Consumer"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
@@ -25,9 +25,11 @@
 	<acme:form-url code="auditor.job.form.label.moreInfo" path="moreInfo" />
 
 	<acme:form-return code="auditor.job.form.button.return" />
+	
+	<%-- <jstl:if test="hasRole('Auditor')"> --%>
+	<acme:form-submit code ="auditor.audit-record.form.button.create" action = "/auditor/audit-record/create?id=${id}" method = "get"/>
+	<%--</jstl:if> --%>
 	<acme:form-submit code="auditor.job.form.button.descriptor" action="/authenticated/descriptor/show?id=${id}" method="get" />
 	<acme:form-submit code="auditor.job.form.button.audits" action="/auditor/audit-record/list?id=${id}" method="get" />
 	
 </acme:form>
-
-</script>

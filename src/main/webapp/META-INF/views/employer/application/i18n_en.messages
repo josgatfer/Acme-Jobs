@@ -11,7 +11,10 @@ employer.application.form.label.skills = Skills:
 employer.application.form.label.qualifications = Qualifications:
 employer.application.form.label.moment = Moment:
 employer.application.form.label.reference = Reference:
+employer.application.form.label.motivo= Reason
+employer.application.motivoRechazado = You must write a reason!
 
 employer.application.form.label.button.return = Return
-
+employer.application.form.button.update = Accept
+employer.application.form.button.update2 = No Accept
 
