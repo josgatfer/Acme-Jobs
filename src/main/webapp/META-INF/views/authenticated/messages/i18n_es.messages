@@ -13,9 +13,14 @@ authenticated.messages.form.label.moment = Fecha de creación
 authenticated.messages.form.label.tags = Etiquetas
 authenticated.messages.form.label.body = Cuerpo
 authenticated.messages.form.label.author = Autor
+authenticated.messages.form.label.thread = Id del thread
 authenticated.messages.form.button.return = Volver
 
 authenticated.messages.list.label.title = Título
 authenticated.messages.list.label.tags = Etiquetas
 authenticated.messages.list.label.moment = Fecha de Creación
 authenticated.messages.list.button.return = Volver
+
+authenticated.messages.form.button.create = Crear
+authenticated.messages.form.label.accept = Confirmar
+authenticated.message.spamWords = Este texto es considerado spam

@@ -50,6 +50,9 @@
 	
 	<jstl:if test="${command !='create' }">
 	<acme:form-submit action="/authenticated/messages/list?id=${id}" method="get" code="authenticated.thread.form.button.messages"></acme:form-submit>
-	</jstl:if>
+	 <acme:form-submit action="/authenticated/messages/create?id=${id}"
+		method="get" code="authenticated.thread.form.button.create-messages"></acme:form-submit>
+  </jstl:if>
+  
 	<acme:form-return code="authenticated.thread.form.button.return" />
 </acme:form>

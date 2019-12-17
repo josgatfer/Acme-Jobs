@@ -10,7 +10,8 @@
 
 authenticated.thread.form.label.title = Título
 authenticated.thread.form.label.moment = Momento
-authenticated.thread.form.button.messages = Mensajes
+authenticated.thread.form.button.list-messages = Lista de mensajes
+authenticated.thread.form.button.create-messages = Crear mensaje
 authenticated.thread.form.label.users = Participantes
 authenticated.thread.form.button.return = Volver
 authenticated.thread.form.label.messageAllAdded = Ya han sido añadidos todos los usuarios disponibles.
@@ -23,3 +24,4 @@ authenticated.thread.form.button.create = Crear
 authenticated.thread.list.label.moment = Momento
 authenticated.thread.list.label.title = Título
 authenticated.thread.list.button.create = Crear Hilo
+

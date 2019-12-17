@@ -14,9 +14,14 @@ authenticated.messages.form.label.moment = Moment
 authenticated.messages.form.label.tags = Tags
 authenticated.messages.form.label.body = Body
 authenticated.messages.form.label.author = Author
+authenticated.messages.form.label.thread = Thread id
 authenticated.messages.form.button.return = Return
 
 authenticated.messages.list.label.title = Title
 authenticated.messages.list.label.tags = Tags
 authenticated.messages.list.label.moment = Moment
 authenticated.messages.list.button.return = Return
+
+authenticated.messages.form.button.create = Create
+authenticated.messages.form.label.accept = Confirm
+authenticated.message.spamWords = This text has been considered spam

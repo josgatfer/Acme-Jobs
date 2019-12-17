@@ -11,7 +11,8 @@
 
 authenticated.thread.form.label.title = Title
 authenticated.thread.form.label.moment = Moment
-authenticated.thread.form.button.messages = Messages
+authenticated.thread.form.button.list-messages = List messages
+authenticated.thread.form.button.create-messages = Create message
 authenticated.thread.form.label.users = Involved Users
 authenticated.thread.form.label.messageAllAdded = You already added all available users.
 authenticated.thread.form.label.usersToAdd = Users to add
