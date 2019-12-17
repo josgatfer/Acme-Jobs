@@ -15,6 +15,14 @@
        drop 
        foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
+    alter table `audit_record` 
+       drop 
+       foreign key `FKdcrrgv6rkfw2ruvdja56un4ji`;
+
+    alter table `audit_record` 
+       drop 
+       foreign key `FKlbvbyimxf6pxvbhkdd4vfhlnd`;
+
     alter table `auditor` 
        drop 
        foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
@@ -63,6 +71,14 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
+    alter table `thread_authenticated` 
+       drop 
+       foreign key `FKkuamwlt147dsxim98bfhh4dsr`;
+
+    alter table `thread_authenticated` 
+       drop 
+       foreign key `FKjsja3s5mr66x5nxm9dd8kut3r`;
+
     alter table `worker` 
        drop 
        foreign key FK_l5q1f33vs2drypmbdhpdgwfv3;
@@ -74,6 +90,8 @@
     drop table if exists `anonymous`;
 
     drop table if exists `application`;
+
+    drop table if exists `audit_record`;
 
     drop table if exists `auditor`;
 
@@ -108,6 +126,8 @@
     drop table if exists `spam_filter`;
 
     drop table if exists `thread`;
+
+    drop table if exists `thread_authenticated`;
 
     drop table if exists `user_account`;
 

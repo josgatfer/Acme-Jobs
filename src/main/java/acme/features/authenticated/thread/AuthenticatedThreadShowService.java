@@ -19,7 +19,6 @@ public class AuthenticatedThreadShowService implements AbstractShowService<Authe
 	@Autowired
 	private AuthenticatedThreadRepository repository;
 
-
 	@Override
 	public boolean authorise(final Request<Thread> request) {
 		assert request != null;
@@ -43,6 +42,9 @@ public class AuthenticatedThreadShowService implements AbstractShowService<Authe
 		for (String s : usersCollection) {
 			users = users + ", " + s;
 		}
+
+		int idThread = request.getModel().getInteger("id");
+		model.setAttribute("id", idThread);
 
 		request.unbind(entity, model, "title", "moment");
 		model.setAttribute("users", users.substring(2));

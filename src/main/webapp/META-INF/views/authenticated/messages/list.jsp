@@ -23,7 +23,12 @@
 		path="title" width="40%" />
 	<acme:list-column code="authenticated.messages.list.label.tags"
 		path="tags" width="30%" />
+
 </acme:list>
+
 <acme:form readonly="true">
-<acme:form-return code="authenticated.messages.form.button.return" />
+	<acme:form-return code="authenticated.messages.form.button.return" />
 </acme:form>
+
+
+
