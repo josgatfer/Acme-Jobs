@@ -22,5 +22,6 @@
 	<acme:list-column code="authenticated.thread.list.label.title"
 		path="title" width="50%" />
 </acme:list>
+<acme:form-submit code="authenticated.thread.list.button.create" method="get" action="/authenticated/thread/create"/>
 
 
