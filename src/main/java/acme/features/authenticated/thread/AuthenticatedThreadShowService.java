@@ -3,6 +3,7 @@ package acme.features.authenticated.thread;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,6 +44,13 @@ public class AuthenticatedThreadShowService implements AbstractShowService<Authe
 		for (String s : usersCollection) {
 			users = users + ", " + s;
 		}
+		Collection<Authenticated> usuariosAnyadidos = this.repository.findAuthenticated(request.getModel().getInteger("id"));
+		Collection<Authenticated> usuariosTotales = this.repository.findAllAuthenticated();
+		Collection<Authenticated> usuariosNoAnyadidos = usuariosTotales.stream().filter(x->!usuariosAnyadidos.contains(x)).collect(Collectors.toList());
+		model.setAttribute("usuariosNoAnyadidos", usuariosNoAnyadidos);
+		model.setAttribute("usertoadd", "");
+		model.setAttribute("usuariosAnyadidos", usuariosAnyadidos);
+		model.setAttribute("usertodelete", "");
 
 		request.unbind(entity, model, "title", "moment");
 		model.setAttribute("users", users.substring(2));
