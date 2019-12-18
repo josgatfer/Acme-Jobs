@@ -43,7 +43,7 @@ public class EmployerApplicationListMineService implements AbstractListService<E
 		Principal principal;
 
 		principal = request.getPrincipal();
-		result = this.repository.findManyByEmployerId(principal.getActiveRoleId());
+		result = this.repository.findManyByEmployerIdGroupingBy(principal.getActiveRoleId());
 
 		return result;
 	}

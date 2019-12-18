@@ -34,14 +34,12 @@ public class Thread extends DomainEntity {
 	@Past
 	private Date								moment;
 
-	@NotEmpty
 	//Para mapear en base a los valores "thread" de mensajes
 	@OneToMany(mappedBy = "thread")
 	private Collection<@Valid Messages>			messages;
 
 	@NotEmpty
-	//Usamos ManyToMany, ya que no nos hará falta buscar ninguna propiedad de usuarios
-	//y no nos hará falta acceder a la tabla intermedia
+	//Usamos ManyToMany, ya que no nos hará falta acceder a la tabla intermedia
 	@ManyToMany
 	private Collection<@Valid Authenticated>	users;
 

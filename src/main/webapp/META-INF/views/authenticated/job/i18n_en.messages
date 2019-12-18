@@ -12,5 +12,6 @@ authenticated.job.form.label.moreInfo = More info
 authenticated.job.form.button.return = Return
 authenticated.job.form.button.descriptor = Descriptor
 authenticated.job.form.button.audits = Audit Records
+authenticated.job.form.button.apply = Apply
 
 

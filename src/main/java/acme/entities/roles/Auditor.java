@@ -20,4 +20,5 @@ public class Auditor extends UserRole {
 
 	@NotBlank
 	private String				responsibilityStatement;
+
 }
