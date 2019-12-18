@@ -1,24 +1,28 @@
 
-package acme.entities.roles;
+package acme.entities.auditorRequest;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 
-import acme.framework.entities.UserRole;
+import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Auditor extends UserRole {
+public class AuditorRequest extends DomainEntity {
 
-	private static final long	serialVersionUID	= 18L;
+	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
 	private String				firm;
 
 	@NotBlank
 	private String				responsibilityStatement;
+
+	private int					accountId;
+
+	private Boolean				status;
 
 }

@@ -42,6 +42,7 @@ master.menu.administrator.announcement.list = Announcement
 master.menu.administrator.challenge.list = Challenges
 master.menu.administrator.investor-record.list = Investor Records
 master.menu.administrator.spam.filter.list = Spam Filter
+master.menu.administrator.auditor-request.list = List of Auditors Requests
 
 # master.menu.provider ########################################################
 
@@ -91,6 +92,11 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.worker = Update your profile
+master.menu.user-account.employer = Update your profile
+master.menu.user-account.become-worker = Become a worker
+master.menu.user-account.become-employer = Become an employer
+master.menu.user-account.become-auditor = Become an auditor
 
 # master.footer ###############################################################
 
