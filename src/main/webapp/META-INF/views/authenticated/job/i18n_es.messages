@@ -12,6 +12,7 @@ authenticated.job.form.label.moreInfo = Más información
 authenticated.job.form.button.return = Volver
 authenticated.job.form.button.descriptor = Descriptor
 authenticated.job.form.button.audits = Auditorías
+authenticated.job.form.button.apply = Solicitar trabajo
 
 
 

@@ -1,15 +1,21 @@
-authenticated.job.list.label.reference = Referencia
-authenticated.job.list.label.deadline = Fecha límite
-authenticated.job.list.label.title = Título
-authenticated.job.list.label.salary = Salario
+employer.job.list.label.reference = Referencia
+employer.job.list.label.deadline = Fecha límite
+employer.job.list.label.title = Título
+employer.job.list.label.status = Estado
 
-authenticated.job.form.label.reference = Referencia
-authenticated.job.form.label.title = Título
-authenticated.job.form.label.deadline = Fecha límite
-authenticated.job.form.label.salary = Salario
-authenticated.job.form.label.moreInfo = Más información
+employer.job.form.label.reference = Referencia
+employer.job.form.label.title = Título
+employer.job.form.label.deadline = Fecha límite
+employer.job.form.label.salary = Salario
+employer.job.form.label.moreInfo = Más información
+employer.job.form.label.status = Estado
+employer.job.form.label.status.draft = Borrador
+employer.job.form.label.status.published = Publicado
 
-authenticated.job.form.button.return = Volver
-authenticated.job.form.button.descriptor = Descriptor
-
+employer.job.form.button.return = Volver
+employer.job.form.button.descriptor = Descriptor
+employer.job.form.button.audits = Audiorías
+employer.job.form.button.create = Crear
+employer.job.form.button.update = Actualizar
+employer.job.form.button.delete = Eliminar
 
