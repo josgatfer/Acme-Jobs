@@ -642,8 +642,7 @@ m2=0..*  -
 Auditor
 --
 + firm: String {NotBlank}
-+ responsibilityStatement : String {NotBlank}
-+ accepted: Boolean</panel_attributes>
++ responsibilityStatement : String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -689,5 +688,35 @@ m1=  1
 m2=0..*  -
  created from &gt;</panel_attributes>
     <additional_attributes>10.0;120.0;570.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>959</x>
+      <y>196</y>
+      <w>126</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Audit Request
+--
++ firm: String {NotBlank}
++ responsibilityStatement : String {NotBlank}
++ accountId: int
++ status: Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>861</x>
+      <y>238</y>
+      <w>112</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=  1
+m2=  1  
+ created by &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
   </element>
 </diagram>
