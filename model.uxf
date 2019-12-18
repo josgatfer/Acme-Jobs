@@ -18,13 +18,13 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
+      <x>462</x>
       <y>210</y>
-      <w>119</w>
-      <h>63</h>
+      <w>105</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>130.0;10.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -166,11 +166,20 @@ bg=yellow</panel_attributes>
       <x>203</x>
       <y>203</y>
       <w>154</w>
-      <h>49</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 CustomCommand
 --
+LIST_MINE
+UPDATE_ACCEPT
+UPDATE_NO_ACCEPT
+LIST_MINE_REFERENCE
+LIST_MINE_STATUS
+LIST_MINE_MOMENT
+ADD_USER
+DELETE_USER
+ACCEPT
 
 
 bg=orange</panel_attributes>
@@ -179,8 +188,8 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>259</y>
+      <x>364</x>
+      <y>224</y>
       <w>140</w>
       <h>63</h>
     </coordinates>
@@ -528,8 +537,8 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>217</x>
-      <y>280</y>
+      <x>385</x>
+      <y>98</y>
       <w>119</w>
       <h>42</h>
     </coordinates>
