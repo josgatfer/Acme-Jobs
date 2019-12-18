@@ -1,0 +1,6 @@
+employer.descriptor.form.label.description = Description
+
+employer.descriptor.form.button.return = Return
+employer.descriptor.form.button.dutiesList = List Duties
+employer.descriptor.form.button.dutiesCreate = Create Duty
+employer.descriptor.form.button.update = Update

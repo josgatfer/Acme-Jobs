@@ -462,26 +462,28 @@
 	<!-- Applications -->
 	<bean id="application01"
 		class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB1:APP1" />
+		<property name="reference" value="A0-J1:W1" />
 		<property name="moment" value="2019/10/05 2:00" />
 		<property name="status" value="Pending" />
 		<property name="statement"
 			value="Me gusta trabajar, por eso quiero este trabajo" />
 		<property name="skills" value="Sociable" />
 		<property name="qualifications" value="Inglés B2" />
+		<property name="motivo" value=" " />
 		<property name="job" ref="job01" />
 		<property name="worker" ref="worker1Worker" />
 	</bean>
 
 	<bean id="application02"
 		class="acme.entities.applications.Application">
-		<property name="reference" value="EMP1-JOB2:APP2" />
+		<property name="reference" value="A0-J2:W2" />
 		<property name="moment" value="2019/11/05 2:00" />
 		<property name="status" value="Pending" />
 		<property name="statement"
 			value="Me gusta trabajar, por eso quiero este trabajo otra vez" />
 		<property name="skills" value="Amigable" />
 		<property name="qualifications" value="Francés B2" />
+		<property name="motivo" value=" " />
 		<property name="job" ref="job02" />
 		<property name="worker" ref="worker1Worker" />
   </bean>

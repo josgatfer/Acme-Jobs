@@ -11,9 +11,17 @@
 
 authenticated.thread.form.label.title = Title
 authenticated.thread.form.label.moment = Moment
-authenticated.thread.form.button.messages = Messages
+authenticated.thread.form.button.list-messages = List messages
+authenticated.thread.form.button.create-messages = Create message
 authenticated.thread.form.label.users = Involved Users
+authenticated.thread.form.label.messageAllAdded = You already added all available users.
+authenticated.thread.form.label.usersToAdd = Users to add
+authenticated.thread.form.button.addUser = Add selected user
+authenticated.thread.form.label.usersToDelete = Users to delete
+authenticated.thread.form.button.deleteUser = Delete selected user
+authenticated.thread.form.button.create = Create
 authenticated.thread.form.button.return = Return
 
 authenticated.thread.list.label.moment = Moment
 authenticated.thread.list.label.title = Title
+authenticated.thread.list.button.create = New Thread

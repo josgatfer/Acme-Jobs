@@ -1,0 +1,6 @@
+employer.descriptor.form.label.description = Descripción
+
+employer.descriptor.form.button.return = Volver
+employer.descriptor.form.button.dutiesList = Listar deberes
+employer.descriptor.form.button.dutiesCreate = Crear deber
+employer.descriptor.form.button.update = Actualizar

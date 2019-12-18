@@ -11,6 +11,7 @@ auditor.job.form.label.salary = Salary
 auditor.job.form.label.moreInfo = More info
 
 auditor.job.form.button.return = Return
+auditor.audit-record.form.button.create = Create Audit Record
 auditor.job.form.button.descriptor = Descriptor
 auditor.job.form.button.audits = Audit Records
 
