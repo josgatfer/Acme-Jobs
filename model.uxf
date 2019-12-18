@@ -738,15 +738,15 @@ m2=0..*  -
     <id>Relation</id>
     <coordinates>
       <x>861</x>
-      <y>133</y>
-      <w>119</w>
-      <h>119</h>
+      <y>126</y>
+      <w>133</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1= 0..*
 m2= 0..*  
- created by &gt;</panel_attributes>
-    <additional_attributes>10.0;150.0;120.0;10.0</additional_attributes>
+ participates in &gt;</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;160.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
