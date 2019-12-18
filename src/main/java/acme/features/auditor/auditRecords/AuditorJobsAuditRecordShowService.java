@@ -30,6 +30,9 @@ public class AuditorJobsAuditRecordShowService implements AbstractShowService<Au
 		assert entity != null;
 		assert model != null;
 
+		boolean isAuditor = request.getPrincipal().hasRole(Auditor.class);
+		model.setAttribute("isAuditor", isAuditor);
+
 		request.unbind(entity, model, "id", "reference", "status", "title", "deadline", "salary", "moreInfo");
 
 	}

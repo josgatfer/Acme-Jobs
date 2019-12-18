@@ -26,9 +26,7 @@
 
 	<acme:form-return code="auditor.job.form.button.return" />
 	
-	<%-- <jstl:if test="hasRole('Auditor')"> --%>
-	<acme:form-submit code ="auditor.audit-record.form.button.create" action = "/auditor/audit-record/create?id=${id}" method = "get"/>
-	<%--</jstl:if> --%>
+	<acme:form-submit code ="auditor.audit-record.form.button.create" test= "${isAuditor == true}" action = "/auditor/audit-record/create?id=${id}" method = "get"/>
 	<acme:form-submit code="auditor.job.form.button.descriptor" action="/authenticated/descriptor/show?id=${id}" method="get" />
 	<acme:form-submit code="auditor.job.form.button.audits" action="/auditor/audit-record/list?id=${id}" method="get" />
 	
