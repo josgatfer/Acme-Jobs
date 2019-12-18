@@ -42,7 +42,7 @@ master.menu.administrator.announcement.list = Announcement
 master.menu.administrator.challenge.list = Challenges
 master.menu.administrator.investor-record.list = Investor Records
 master.menu.administrator.spam.filter.list = Spam Filter
-master.menu.administrator.auditor.list = List of Auditors
+master.menu.administrator.auditor-request.list = List of Auditors Requests
 
 # master.menu.provider ########################################################
 

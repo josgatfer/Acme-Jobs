@@ -13,7 +13,10 @@ administrator.auditor.form.label.statusCheckbox = Check this to validate this au
 administrator.auditor.form.label.statement = Statement
 administrator.auditor.form.label.firm = Firm
 
-administrator.auditor.list.label.status = Request's status
 
+administrator.auditor.list.label.firm = Firm
+administrator.auditor.list.label.statement = Statement
+
+administrator.auditor.form.button.accept = Accept this auditor
 administrator.auditor.form.button.update = Update
 administrator.auditor.form.button.return = Return

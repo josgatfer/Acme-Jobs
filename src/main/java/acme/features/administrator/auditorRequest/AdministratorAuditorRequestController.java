@@ -1,5 +1,5 @@
 /*
- * AuthenticatedAuditorController.java
+ * AdministratorAuditorRequestController.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.auditor;
+package acme.features.administrator.auditorRequest;
 
 import javax.annotation.PostConstruct;
 
@@ -18,30 +18,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.roles.Auditor;
+import acme.components.CustomCommand;
+import acme.entities.auditorRequest.AuditorRequest;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/authenticated/auditor/")
-public class AuthenticatedAuditorController extends AbstractController<Authenticated, Auditor> {
+@RequestMapping("/administrator/auditor-request/")
+public class AdministratorAuditorRequestController extends AbstractController<Administrator, AuditorRequest> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedAuditorCreateService	createService;
+	private AdministratorAuditorRequestListService		listService;
 
 	@Autowired
-	private AuthenticatedAuditorUpdateService	updateService;
+	private AdministratorAuditorRequestShowService		showService;
 
+	@Autowired
+	private AdministratorAuditorRequestAcceptService	acceptService;
 
 	// Constructors -----------------------------------------------------------
 
+
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addCustomCommand(CustomCommand.ACCEPT, BasicCommand.UPDATE, this.acceptService);
+
 	}
 
 }

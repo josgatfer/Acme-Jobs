@@ -20,14 +20,12 @@
 	
 	<acme:form-textbox code="administrator.auditor.form.label.firm" path="firm" readonly="true"/>
 	<acme:form-textarea code="administrator.auditor.form.label.statement" path="responsibilityStatement" readonly="true" />
-	<jstl:if test="${status != 'Accepted'}">
-	<acme:form-checkbox code="administrator.auditor.form.label.statusCheckbox" path="status"/>
-	</jstl:if>
-	<acme:form-submit test="${command== 'show'}" code="administrator.auditor.form.button.update"
-		action="/administrator/auditor/update" />
+	<acme:form-hidden path="accountId" />
+	
+
+	<acme:form-submit  code="administrator.auditor.form.button.accept"
+		action="/administrator/auditor-request/accept" />
 		
-	<acme:form-submit test="${command == 'update'}" code="administrator.auditor.form.button.update"
-		action="/administrator/auditor/update"/>
 		
 	<acme:form-return code="administrator.auditor.form.button.return" />
 </acme:form>

@@ -18,8 +18,8 @@
 
 <tiles-definitions>
 	
-	<definition name="authenticated/auditor/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/auditor/form.jsp" />
+	<definition name="authenticated/auditor-request/form" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/auditor-request/form.jsp" />
 	</definition>
 
 </tiles-definitions>

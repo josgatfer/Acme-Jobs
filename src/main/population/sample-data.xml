@@ -212,7 +212,6 @@
 		<property name="responsibilityStatement"
 			value="Auditor 1 responsibility statement" />
 		<property name="userAccount" ref="auditor1UserAccount" />
-		<property name="accepted" value="true" />
 	</bean>
 
 	<bean name="auditor1Authenticated"

@@ -42,7 +42,7 @@ master.menu.administrator.announcement.list = Anuncios
 master.menu.administrator.challenge.list = Desafíos
 master.menu.administrator.investor-record.list = Registros de inversión
 master.menu.administrator.spam.filter.list = Filtro de Spam
-master.menu.administrator.auditor.list = Lista de auditores
+master.menu.administrator.auditor-request.list = Lista de solicitudes de auditores
 
 # master.menu.provider ########################################################
 
