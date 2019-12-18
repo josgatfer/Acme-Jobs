@@ -18,8 +18,8 @@
 <acme:form readonly="false">
 
 	<jstl:if test="${command != 'create' }">
-		<acme:form-textbox code="authenticated.messages.form.label.user"
-			path="user" readonly="true" />
+		<acme:form-textbox code="authenticated.messages.form.label.author"
+			path="author" readonly="true" />
 		<acme:form-moment code="authenticated.messages.form.label.moment"
 			path="moment" readonly="true" />
 	</jstl:if>
